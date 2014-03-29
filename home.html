@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!-- Bootstrap -->
+    <meta charset="utf-8">
+  <title>Plan It: Hamilton</title>
+    <!-- CSS Files-->
+    <link href="css/cupertino/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="css/planner.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <!-- Javascript Files-->
+   
+  </head>
+  <body>
+    <div class="logo">Plan It: Hamilton
+    <div class="ui-widget">
+    <input id="tags" class = "course-search form-control" type='text' name='search' value='Search for class...' onfocus="if(this.value == 'Search for class...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search for class...'; }">
+  </div></div>
+    <!--Start creating CSS table -->
+    <table class="table table-striped planner-table">
+      <tr class="row">
+        <th style="width: 3%"></th>
+        <th style="width: 14%">Mon</th>
+        <th style="width: 14%">Tue</th>
+        <th style="width: 14%">Wed</th>
+        <th style="width: 14%">Thu</th>
+        <th style="width: 14%">Fri</th>
+      </tr><tr class="row">
+        <td style="text-align: right;">8</td>
+        <td id="m8" class="cell"><div class="overflow"></div></td>
+        <td id="t8" class="cell"><div class="overflow"></div></td>
+        <td id="w8" class="cell"><div class="overflow"></div></td>
+        <td id="r8" class="cell"><div class="overflow"></div></td>
+        <td id="f8" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right;">9</td>
+        <td id="m9" class="cell"><div class="overflow"></div></td>
+        <td id="t9" class="cell"><div class="overflow"></div></td>
+        <td id="w9" class="cell"><div class="overflow"></div></td>
+        <td id="r9" class="cell"><div class="overflow"></div></td>
+        <td id="f9" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right"> 10</td>
+        <td id="m10" class="cell"><div class="overflow"></div></td>
+        <td id="t10" class="cell"><div class="overflow"></div></td>
+        <td id="w10" class="cell"><div class="overflow"></div></td>
+        <td id="r10" class="cell"><div class="overflow"></div></td>
+        <td id="f10" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">11</td>
+        <td id="m11" class="cell"><div class="overflow"></div></td>
+        <td id="t11" class="cell"><div class="overflow"></div></td>
+        <td id="w11" class="cell"><div class="overflow"></div></td>
+        <td id="r11" class="cell"><div class="overflow"></div></td>
+        <td id="f11" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">12</td>
+        <td id="m12" class="cell"><div class="overflow"></div></td>
+        <td id="t12" class="cell"><div class="overflow"></div></td>
+        <td id="w12" class="cell"><div class="overflow"></div></td>
+        <td id="r12" class="cell"><div class="overflow"></div></td>
+        <td id="f12" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">1</td>
+        <td id="m1" class="cell"><div class="overflow"></div></td>
+        <td id="t1" class="cell"><div class="overflow"></div></td>
+        <td id="w1" class="cell"><div class="overflow"></div></td>
+        <td id="r1" class="cell"><div class="overflow"></div></td>
+        <td id="f1" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">2</td>
+        <td id="m2" class="cell"><div class="overflow"></div></td>
+        <td id="t2" class="cell"><div class="overflow"></div></td>
+        <td id="w2" class="cell"><div class="overflow"></div></td>
+        <td id="r2" class="cell"><div class="overflow"></div></td>
+        <td id="f2" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">3</td>
+        <td id="m3" class="cell"><div class="overflow"></div></td>
+        <td id="t3" class="cell"><div class="overflow"></div></td>
+        <td id="w3" class="cell"><div class="overflow"></div></td>
+        <td id="r3" class="cell"><div class="overflow"></div></td>
+        <td id="f3" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">4</td>
+        <td id="m4" class="cell"><div class="overflow"></div></td>
+        <td id="t4" class="cell"><div class="overflow"></div></td>
+        <td id="w4" class="cell"><div class="overflow"></div></td>
+        <td id="r4" class="cell"><div class="overflow"></div></td>
+        <td id="f4" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">5</td>
+        <td id="m5" class="cell"><div class="overflow"></div></td>
+        <td id="t5" class="cell"><div class="overflow"></div></td>
+        <td id="w5" class="cell"><div class="overflow"></div></td>
+        <td id="r5" class="cell"><div class="overflow"></div></td>
+        <td id="f5" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">6</td>
+        <td id="m6" class="cell"><div class="overflow"></div></td>
+        <td id="t6" class="cell"><div class="overflow"></div></td>
+        <td id="w6" class="cell"><div class="overflow"></div></td>
+        <td id="r6" class="cell"><div class="overflow"></div></td>
+        <td id="f6" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">7</td>
+        <td id="m7" class="cell"><div class="overflow"></div></td>
+        <td id="t7" class="cell"><div class="overflow"></div></td>
+        <td id="w7" class="cell"><div class="overflow"></div></td>
+        <td id="r7" class="cell"><div class="overflow"></div></td>
+        <td id="f7" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">8</td>
+        <td id="mp8" class="cell"><div class="overflow"></div></td>
+        <td id="tp8" class="cell"><div class="overflow"></div></td>
+        <td id="wp8" class="cell"><div class="overflow"></div></td>
+        <td id="rp8" class="cell"><div class="overflow"></div></td>
+        <td id="fp8" class="cell"><div class="overflow"></div></td>
+      </tr><tr class="row">
+        <td style="text-align: right">9</td>
+        <td id="mp9" class="cell"><div class="overflow"></div></td>
+        <td id="tp9" class="cell"><div class="overflow"></div></td>
+        <td id="wp9" class="cell"><div class="overflow"></div></td>
+        <td id="rp9" class="cell"><div class="overflow"></div></td>
+        <td id="fp9" class="cell"><div class="overflow"></div></td>
+      </tr>
+      <tr class="row">
+        <td style="text-align: right">10</td>
+        <td id="mp10" class="cell"><div class="overflow"></div></td>
+        <td id="tp10" class="cell"><div class="overflow"></div></td>
+        <td id="wp10" class="cell"><div class="overflow"></div></td>
+        <td id="rp10" class="cell"><div class="overflow"></div></td>
+        <td id="fp10" class="cell"><div class="overflow"></div></td>
+      </tr>
+    </table>
+  </div>
+
+
+  
+</div>
+
+  <div class="course-container" id="test">
+    <div class="course cr-top" id="course1"><p class="course-id"></p></div>
+    <div class="course cr-top" id="course2"><p class="course-id"></p></div>
+    <div class="course cr-top" id="course3"><p class="course-id"></p></div>
+    <div class="course cr-top" id="course4"><p class="course-id"></p></div>
+    <div class="course cr-top" id="course5"><p class="course-id"></p></div>
+    <div class="course cr-top" id="course6"><p class="course-id"></p></div>
+  </div>
+
+  <div id="dialog-confirm" title="Empty the recycle bin?">
+<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+   <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/planner.js"></script>   
+  </body>
+</html>
