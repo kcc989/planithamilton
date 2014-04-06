@@ -1,0 +1,31 @@
+function doesOverLap(startHour1, startHour2, startMin1, startMin2, duration1, duration2, days1, days2) {
+    var overlapCount = 0;
+    if (days1 === "None" || days2 === "None") {return false;}
+    for(var i = 0; i < days2.length; i++){
+        if(days1.indexOf(days2[i]) !== -1){overlapCount++;}
+    }
+    if(overlapCount === 0){
+        return false;
+    }
+    if (startHour1 === startHour2 && startMin1 === startMin2) {
+        return true;
+    }
+    if (startHour1 < 8) {
+        startHour1 += 12;
+    }
+    if (startHour2 < 8) {
+        startHour2 += 12;
+    }
+    startHour1 += startMin1 / 60
+    startHour2 += startMin2 / 60
+    if (startHour1 < startHour2) {
+        if (startHour1 + duration1 / 60 > startHour2) {
+            return true;
+        }
+    } else {
+        if (startHour2 + duration2 / 60 > startHour1) {
+            return true;
+        }
+    }
+    return false;
+}

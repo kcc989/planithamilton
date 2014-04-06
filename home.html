@@ -3,21 +3,21 @@
   <head>
    <!-- Bootstrap -->
     <meta charset="utf-8">
-  <title>Plan It: Hamilton</title>
+    <title>Plan It: Hamilton</title>
     <!-- CSS Files-->
-    <link href="css/cupertino/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="css/planit-hamilton-ui/jquery-ui-1.9.2.custom.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <link href="css/planner.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <!-- Javascript Files-->
-   
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">   
   </head>
+
   <body>
-    <div class="logo">Plan It: Hamilton
-    <div class="ui-widget">
-    <input id="tags" class = "course-search form-control" type='text' name='search' value='Search for class...' onfocus="if(this.value == 'Search for class...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search for class...'; }">
-  </div></div>
+    <div class="logo">Plan It: Hamilton<i style="margin-left: 10px;"class="fa fa-globe"></i>
+    </div>
+
+  <div class="tableHolder">
     <!--Start creating CSS table -->
     <table class="table table-striped planner-table">
       <tr class="row">
@@ -149,11 +149,33 @@
     </table>
   </div>
 
+<div id="dialog-confirm" title="Issue with overlapping courses!">
+  <i class="fa fa-exclamation-triangle fa-2x" style="color: #003366; float:left; margin:10px 7px 0px 0;"></i>
+<p style=""></p>
+</div>
 
+<div id="dialog-overflow" title="Too many courses!">
+  <i class="fa fa-exclamation-triangle fa-2x" style="color: #003366; float:left; margin:10px 7px 0px 0;"></i>
+<p>You have selected too many courses. Please remove some before adding more!</p>
+</div>
+
+<div id="dialog-info" title="Course Meeting Info">
+<h1 id = "mTitle"></h1>
+<h4 id="mProf"></h4>
+<p id="mm"></p>
+<p id="mt"></p>
+<p id="mw"></p>
+<p id="mr"></p>
+<p id="mf"></p>
+</div>
   
 </div>
 
   <div class="course-container" id="test">
+
+    <div class="ui-widget">
+    <input id="tags" class = "course-search form-control" type='text' name='search' value='Search for class...' onfocus="if(this.value == 'Search for class...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search for class...'; }">
+  </div>
     <div class="course cr-top" id="course1"><p class="course-id"></p></div>
     <div class="course cr-top" id="course2"><p class="course-id"></p></div>
     <div class="course cr-top" id="course3"><p class="course-id"></p></div>
@@ -162,11 +184,10 @@
     <div class="course cr-top" id="course6"><p class="course-id"></p></div>
   </div>
 
-  <div id="dialog-confirm" title="Empty the recycle bin?">
-<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
-</div>
-   <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-    <script src="js/planner.js"></script>   
+
+
+   <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/planner.min.js"></script>   
   </body>
 </html>
